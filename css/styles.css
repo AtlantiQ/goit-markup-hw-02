@@ -1,13 +1,26 @@
+/* Цвета */
 :root {
   --grey: #757575;
+  --main-black: #212121;
+  --background: #2f303a;
+  --background-white: #ffffff;
+  --footer-rgba: rgba(255, 255, 255, 0.6);
+  --hover: #2196f3;
 }
 
 body {
-  color: #212121;
+  color: var(--main-black);
   font-family: 'Comfortaa', cursive;
 }
+
+/* Убрать точки у списков */
 ul {
   list-style: none;
+}
+
+/* Убрать подчеркивания у ссылок */
+.link {
+  text-decoration: none;
 }
 
 /* button */
