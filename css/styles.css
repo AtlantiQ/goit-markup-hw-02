@@ -166,6 +166,13 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+.features p {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
 
 /* Наша команда */
 
@@ -173,7 +180,7 @@ h6 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
 }
 
@@ -182,7 +189,7 @@ h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
 }
 
