@@ -8,9 +8,9 @@
     <title>Git rules!</title>
     <link rel="stylesheet" href="./css/styles.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" /> -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,20 +20,19 @@
         <!-- Навигация по сайту -->
         <nav>
             <ul>
-                <a class="logo-web link" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+                <a class="logo-header link" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
             </ul>
 
 
-            <ul class="site-nav">
-                <li><a href="./index.html" class="link current">Студия</a></li>
+            <ul class="head-nav list">
+                <li><a  href="./index.html" class="link current">Студия</a></li>
                 <li><a href="./portfolio.html"class="link ">Портфолио</a></li>
                 <li><a href=""class="link ">Контакты</a></li>
-                
-
-            </ul>
+                </ul>
         </nav>
+        
         <!-- Контакты -->
-        <ul class="site-contact">
+        <ul class="contacts list">
             <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
@@ -41,7 +40,7 @@
 
     <main>
         <section class="head-button">
-            <ul>
+            <ul class="list">
                 <li>
                     <h1>Эффективные решения <br /> для вашего бизнеса</h1>
                     <!-- <a href="" class="button primary" type="button">Заказать услугу</a> -->
@@ -55,7 +54,7 @@
 
 <!-- Особенности -->
         <section class="feature-list">
-           <ul >
+           <ul class="list">
                 <li>
                     <h3 class="title">Внимание к деталям</h3>
                 <p class="feature-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -79,7 +78,7 @@
 <!-- Перечень услуг -->
     <section class="boxes">
         <h2>Чем мы занимаемся</h2>
-<ul>
+<ul class="list">
     <li>
         <a href="">
         <img src=" ./image/1.svg" alt="Coding" width="370">
@@ -102,7 +101,7 @@
 <!-- Команда -->
         <section class="team">
             <h2>Наша команда</h2>
-            <ul>
+            <ul class="list">
                <li >
                    <a class="link" href="">
                     <img src="./image/Игорь.svg" alt="Игорь Демьяниненко" width="270">
@@ -117,20 +116,20 @@
                     <p>Frontend Developer</p>
                     </a>
                 </li>
-                <a href="">
-                <li class="team-nikolai ">
+                <a class="link" href="">
+                <li>
                     <img src="./image/Николай.svg" alt="Николай Тарасов" width="270">
                     <h4>Николай Тарасов</h4>
                     <p>Marketing</p>
                     </a>
                 </li>
-                <a href="">
-                <li class="team-mihail ">
+                <a class="link" href="">
+                <li>
                     <img src="./image/Михаил.svg" alt="Михаил Ермаков" width="270">
                     <h4>Михаил Ермаков</h4>
                     <p>UI Designer</p>
                     </a>
-                </li> class="tittle"
+                </li>
 
             </ul>
         </section>
@@ -138,18 +137,18 @@
 
 
     <!-- Футер -->
-    <footer>
+    <footer class="footer-nav">
         <a class="logo-footer link" href="./index.html" ><span class="logo-blue">Web</span>Studio</a>
         <address>
-            <ul>
-                <li>
+            <ul class="list">
+                <li class="adress link">
             г. Киев, пр-т Леси Украинки, 26 <br />
             </li>
             <li>
-                <a class ="footer-adres" href="mailto:info@devstudio.com">info@example.com</a>
+                <a class ="footer-contacts" href="mailto:info@devstudio.com">info@example.com</a>
             </li>
             <li>
-                <a class ="footer-adres" href="tel:+380961111111">+38 099 111 11 11</a>
+                <a class ="footer-contacts" href="tel:+380961111111">+38 099 111 11 11</a>
             </li>
            </ul>
         </address>
