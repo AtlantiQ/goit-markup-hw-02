@@ -76,6 +76,13 @@ h6 {
   letter-spacing: 0.02em;
 }
 
+/* расположение элементов в шапке */
+header .page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .head-nav .link:hover,
 .head-nav .link:focus {
   color: var(--hover);
@@ -128,6 +135,8 @@ h6 {
 .head-button {
   background-color: var(--background);
   text-align: center;
+
+  height: 595px;
 }
 .head-button h1 {
   color: var(--background-white);
@@ -138,9 +147,25 @@ h6 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
+/* ????? */
+.head-button li {
+  padding-top: 198.33px;
+  padding-bottom: 198.33px;
+  padding-left: 452px;
+  padding-right: 452px;
+}
+
+.centered {
+  text-align: center;
+}
 /* оформлениек кнопки */
+.head-button .list {
+  margin-top: 0;
+  padding: 0;
+}
 
 /* .head-button .button {
   background-color: var(--hover);
@@ -162,7 +187,6 @@ h6 {
   text-align: center;
 } */
 .button-center .button {
-  margin-bottom: 30px;
   background-color: var(--hover);
   color: var(--background-white);
   font-family: 'Roboto', sans-serif;
@@ -177,14 +201,9 @@ h6 {
   height: 50px;
   left: 700px;
   top: 430px;
+  padding: 0;
+  margin-bottom: 0;
 }
-
-/* .head-button .button-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
 
 /* Заголовки */
 .section-tittle {
@@ -202,6 +221,8 @@ h6 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 99px;
+  margin-bottom: 10px;
 }
 .features p {
   color: var(--grey);
@@ -209,6 +230,8 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
 /* Наша команда */
@@ -229,6 +252,11 @@ h6 {
   /* text-align: center; */
   letter-spacing: 0.03em;
 }
+.team .list {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
+}
 
 /* Кнопки фильтра */
 .filter .button {
@@ -242,6 +270,12 @@ h6 {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+.filter .list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-basis: calc((100% - 30px) / 5); */
 }
 
 .filter .button:hover,
@@ -257,6 +291,8 @@ h6 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .project p {
@@ -265,4 +301,21 @@ h6 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.project .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
+  flex-basis: calc((100% -30px) / 3);
+}
+/* Чем мы занимаемся */
+
+.boxes .list {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-start;
 }
