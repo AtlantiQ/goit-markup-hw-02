@@ -29,6 +29,8 @@ body {
 /* Убрать точки у списков */
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Убрать подчеркивания у ссылок */
@@ -52,6 +54,10 @@ h6 {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-left: 0;
+  margin-right: 93px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .logo-blue {
   color: #2196f3;
@@ -75,19 +81,45 @@ h6 {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+.head-nav {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 331px;
+}
+/* .head-nav .item {
+  margin-right: 50px;
+}
+.head-nav .item:last-child {
+  margin-right: 0;
+} */
+.head-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 /* расположение элементов в шапке */
-header .page-header {
+.page-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+.nav-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .head-nav .link:hover,
 .head-nav .link:focus {
   color: var(--hover);
 }
-
+/* Контакты */
+.contacts {
+  display: flex;
+}
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+  justify-content: flex-end;
+}
 .contacts .link {
   color: var(--grey);
   font-weight: 500;
@@ -233,7 +265,24 @@ header .page-header {
   margin-top: 0;
   margin-bottom: 94px;
 }
-
+.features .list {
+  display: flex;
+  justify-content: center;
+}
+.features .list:not(:last-child) {
+  margin-right: 30px;
+}
+.features .item {
+  flex-basis: calc((100% - 30px) / 4);
+}
+/* Чем мы занимаемся  */
+.boxes .list {
+  display: flex;
+  justify-content: center;
+}
+.boxes .item:not(:last-child) {
+  margin-right: 30px;
+}
 /* Наша команда */
 
 .team h3 {
@@ -311,11 +360,4 @@ header .page-header {
   margin-left: -10px;
   margin-top: -10px;
   flex-basis: calc((100% -30px) / 3);
-}
-/* Чем мы занимаемся */
-
-.boxes .list {
-  display: flex;
-  /* justify-content: space-between; */
-  justify-content: flex-start;
 }
