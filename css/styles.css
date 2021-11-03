@@ -80,6 +80,7 @@ h6 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
 }
 .head-nav {
   display: flex;
@@ -107,6 +108,11 @@ h6 {
   align-items: center;
   justify-content: center;
 }
+/* .nav-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
 .head-nav .link:hover,
 .head-nav .link:focus {
@@ -118,13 +124,14 @@ h6 {
 }
 .contacts .item:not(:last-child) {
   margin-right: 50px;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 .contacts .link {
   color: var(--grey);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
 }
 .contacts .link:hover,
 .contacts .link:focus {
@@ -268,13 +275,17 @@ h6 {
 .features .list {
   display: flex;
   justify-content: center;
+  /* width: 270px; */
+  align-items: center;
 }
 .features .list:not(:last-child) {
   margin-right: 30px;
 }
-.features .item {
-  flex-basis: calc((100% - 30px) / 4);
+.features .features-text {
 }
+/* .features .item {
+  flex-basis: calc((100% - 30px) / 4);
+} */
 /* Чем мы занимаемся  */
 .boxes .list {
   display: flex;
@@ -340,8 +351,6 @@ h6 {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-left: 10px;
-  margin-top: 10px;
 }
 
 .project p {
@@ -350,14 +359,29 @@ h6 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  margin-left: 10px;
-  margin-top: 10px;
 }
 
 .project .list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -10px;
-  margin-top: -10px;
-  flex-basis: calc((100% -30px) / 3);
+  margin-right: -30px;
+
+  /* flex-basis: calc((100% -90px) / 3); */
+}
+/* .project .list:not(:last-child) {
+  margin-right: 30px;
+} */
+.project-container .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.project-container {
+  display: flex;
+  width: 1170px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 34px;
+  align-items: center;
+  justify-content: center;
 }
